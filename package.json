@@ -5,7 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "db:createTable": "node ./db/scripts/createTable.js",
+    "db:uploadPokemon": "node ./db/scripts/uploadPokemon.js",
+    "db:dropTable": "node ./db/scripts/dropTable.js",
+    "db:reset": "npm run db:dropTable && npm run db:createTable && npm run db:uploadPokemon"
   },
   "repository": {
     "type": "git",
@@ -18,7 +22,8 @@
   },
   "homepage": "https://github.com/SchoolOfCode/pokedex-nevillejodie#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^7.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

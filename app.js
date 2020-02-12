@@ -27,7 +27,7 @@ app.get("/pokemon", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`listening on post ${PORT}`);
+  console.log(`listening on port ${PORT}`);
 });
 
 app.get("/pokemon/:pokemonId", async (req, res) => {
