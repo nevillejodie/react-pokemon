@@ -12,10 +12,10 @@ async function createTable() {
     evolutions TEXT[],
     PRIMARY KEY (id)
   )`);
+
     console.log(res);
   } catch (err) {
     console.log(err);
   }
 }
-
 createTable();
