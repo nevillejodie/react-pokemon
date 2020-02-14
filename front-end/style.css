@@ -1,7 +1,14 @@
 body {
+  text-align: center;
   background-color: #ffcb05;
 }
 h1 {
   color: #3466af;
   text-align: center;
+}
+button {
+  color: #3466af;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: large;
+  font-weight: 100;
 }
